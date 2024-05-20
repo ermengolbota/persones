@@ -75,7 +75,7 @@ Des del llistat hi haurà un enllaç que farà l'esborrat. La forma de fer-lo se
 Ja has fet la teva primera aplicació CRUD en php!!!
 ## Seguretat
 És segura la teva aplicació?
-Podries evitar l'acudit de _Bobby tables_ de xkcd?
+Podries evitar l'acudit de _Bobby tables_ de [xkcd](https://xkcd.com/)?
 ![XKCD Bobby Tables](https://bobby-tables.com/img/xkcd.png)
 * Prova d'atacar la teva aplicació inserint un nom d'usuari que "trenqui" l'aplicació.
 * Tens més informació a https://bobby-tables.com/
