@@ -1,0 +1,26 @@
+services:
+
+  web:
+    image: ebota/daw:apache_php82_mysql
+    ports:
+      - "8080:80"
+    links:
+       - db
+    volumes:
+      - ./web/:/var/www/html/
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1Password
+    volumes:
+      - ./dades.sql:/docker-entrypoint-initdb.d/dades.sql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9090:8080
+    links:
+      - db:db
