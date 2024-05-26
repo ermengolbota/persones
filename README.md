@@ -84,6 +84,7 @@ Podries evitar l'acudit de _Bobby tables_ de [xkcd](https://xkcd.com/)?
 ## Opcions de millora
 1. Unificar afegir i editar persona
 1. Afegir seguretat a la injecció SQL fent servir "prepared statement" i no SQL "a pel".
+    1. Per exemple, si a la pantalla d'actualitzar un usuari (per exemple el segon), poseu com a nom `` PACO' WHERE id=1;  # `` actualitzareu el nom de l'usuari amb id 1, encara que hagueu entrat a la pantalla d'edició de l'usuari 2.
 1. Calcular l'edat en el navegador utilitzant Javascript, d'aquesta forma el càlcul serà sempre en la zona horària de l'usuari, i no en la zona horària del servidor.
 1. Guardar la data de naixement, i no només l'any
 1. Incloure tests unitaris i/o test E2E
